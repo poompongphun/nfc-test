@@ -1,115 +1,76 @@
-<!DOCTYPE html>
-<!-- saved from url=(0035)https://whatwebcando.today/nfc.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <meta content="Can I rely on the Web Platform features to build my app? An overview of the device integration HTML5 APIs" name="description"> <meta content="width=device-width,initial-scale=1" name="viewport"> <!--<base href="/">--><base href="."> <link href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2" rel="preload" type="font/woff2" as="font" crossorigin="anonymous"> <link href="https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu3cOWxw.woff2" rel="preload" type="font/woff2" as="font" crossorigin="anonymous"> <link href="https://whatwebcando.today/Material-Design-Icons.woff" rel="preload" type="font/woff2" as="font" crossorigin="anonymous"> <style>@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:local('Source Sans Pro Regular'),local('SourceSansPro-Regular'),url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:local('Source Sans Pro Bold'),local('SourceSansPro-Bold'),url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu3cOWxw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Material Design Icons";src:url(/Material-Design-Icons.woff) format("woff");font-weight:400;font-style:normal}</style> <link href="https://whatwebcando.today/icon-76x76.png" rel="apple-touch-icon" sizes="60x60 72x72 76x76"> <link href="https://whatwebcando.today/icon-120x120.png" rel="apple-touch-icon" sizes="114x114 120x120"> <link href="https://whatwebcando.today/icon-144x144.png" rel="apple-touch-icon" sizes="144x144"> <link href="https://whatwebcando.today/icon-152x152.png" rel="apple-touch-icon" sizes="152x152"> <link href="https://whatwebcando.today/icon-180x180.png" rel="apple-touch-icon" sizes="167x167 180x180"> <link href="https://whatwebcando.today/icon-32x32.png" rel="icon" sizes="16x16 32x32" type="image/png"> <link href="https://whatwebcando.today/icon-96x96.png" rel="icon" sizes="96x96" type="image/png"> <link href="https://whatwebcando.today/icon-192x192.png" rel="icon" sizes="192x192" type="image/png"> <link href="https://whatwebcando.today/manifest.json" rel="manifest"> <link href="./index_files/main.4188134553.css" rel="stylesheet"><link href="./index_files/[feature].html.d41938c2.css" rel="stylesheet"><link href="./index_files/prism.3fa19f60.css" rel="stylesheet">  <meta content="yes" name="apple-mobile-web-app-capable"> <meta content="yes" name="mobile-web-app-capable"> <meta content="What Web Can Do Today" name="application-name"> <meta content="What Web Can Do" name="apple-mobile-web-app-title"> <meta content="https://whatwebcando.today/icon-144x144.png" name="msapplication-TileImage"> <meta content="#ffffff" name="theme-color"> <meta content="#ffffff" name="msapplication-navbutton-color"> <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> <meta content="/" name="msapplication-starturl"> <meta content="website" property="og:type"> <meta content="WhatWebCanDo" property="og:site_name"> <meta content="summary" name="twitter:card"> <meta content="@WhatWebCanDo" name="twitter:site"> <script type="text/javascript" async="" src="./index_files/analytics.js.download"></script><script src="./index_files/client.000ded29.js.download" type="module" crossorigin="use-credentials"></script><title>What Web Can Do Today: NFC</title> <meta property="og:title" content="What Web Can Do Today: NFC"> <meta property="og:description" content="Can I rely on the Web Platform features to build my app? An overview of the device integration HTML5 APIs."> <meta property="og:url" content="https://whatwebcando.today/nfc.html"> <meta property="og:image" content="https://whatwebcando.today/images/share-image.png"> <meta name="twitter:title" content="What Web Can Do Today: NFC"> <meta name="twitter:description" content="Can I rely on the Web Platform features to build my app? An overview of the device integration HTML5 APIs."> <meta name="twitter:image" content="https://whatwebcando.today/images/share-image.png"></head> <body cz-shortcut-listen="true"> <div id="sapper"><header class="text-center svelte-1cc53ms"><nav><ul class="svelte-1cc53ms"><li class="svelte-1cc53ms"><a href="https://whatwebcando.today/" class="svelte-1cc53ms">Features</a></li> <li class="svelte-1cc53ms"><a href="https://whatwebcando.today/articles/" class="svelte-1cc53ms">Articles</a></li> <li class="svelte-1cc53ms"><a href="https://adambar.pl/#services" class="svelte-1cc53ms" rel="noopener" target="_blank">Services</a></li> <li class="svelte-1cc53ms"><a href="https://adambar.pl/#workshops" class="svelte-1cc53ms" rel="noopener" target="_blank">Trainings</a></li></ul></nav> <div class="title-container svelte-1cc53ms"><h1 class="svelte-1cc53ms">What Web Can Do Today?</h1> <p class="svelte-1cc53ms">Can I rely on the Web Platform features to build my app?</p> <p class="svelte-1cc53ms">An overview of the device integration HTML5 APIs</p></div></header>  <main class="page svelte-126eukc"><nav aria-label="breadcrumbs" class="breadcrumb"><ul><li><a href="https://whatwebcando.today/">Features</a></li> <li class="is-active"><a href="https://whatwebcando.today/nfc.html" aria-current="page">NFC</a></li></ul></nav> <article><h2>NFC</h2> <section><p>The <b>Web NFC API</b> is a low-level API that provides sites the ability to read and write to nearby NFC (Near-Field Communication) devices.</p><p>It allows starting up a scan that informs when an NFC tag has been tapped. It also provides a method to write a message via NFC.</p><p>Current support is limited to an experimental implementation in Chrome, available behind the "experimental-web-platform-features" flag on Android. There was also Firefox OS experimental implementation that is <code>moz</code>-prefixed and doesn't follow the current state of the specification draft.</p></section> <section><h3>API glimpse</h3> <div class="api-glimpse language-javascript"><dl>
-        <dt><code class="  language-javascript"><span class="token keyword">const</span> ndef <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NDEFReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></dt>
-        <dd>Creates an object used for interacting with NDEF formatted NFC tags.</dd>
-        <dt><code class="  language-javascript">ndef<span class="token punctuation">.</span><span class="token function">scan</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span></code></dt>
-        <dd>Returns a <code class="  language-javascript">Promise</code> resolved if starting NFC scan was successful.</dd>
-        <dt><code class="  language-javascript">ndef<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'reading'</span><span class="token punctuation">,</span> listener<span class="token punctuation">)</span></code></dt>
-        <dd>An event fired when a new reading is available.</dd>
-        <dt><code class="  language-javascript">ndef<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'readingerror'</span><span class="token punctuation">,</span> listener<span class="token punctuation">)</span></code></dt>
-        <dd>An event fired when an error happened during reading.</dd>
-        <dt><code class="  language-javascript">ndef<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>message<span class="token punctuation">,</span> options<span class="token punctuation">)</span></code></dt>
-        <dd>Returns a <code class="  language-javascript">Promise</code> resolved if writing the <code class="  language-javascript">message</code> (String, ArrayBuffer or NDEF record) with <code class="  language-javascript">options</code> was successful.</dd>
-      </dl></div></section> <section class="feature-tests" aria-hidden="true"><h3>Support in your browser</h3> <div><div class="feature-test bg-danger svelte-126eukc"><div class="pull-left svelte-126eukc"><code class="svelte-126eukc">window​.NDEFReader</code></div> <div class="pull-right svelte-126eukc">️❌ Not supported</div> </div></div></section> <section><h3>Live Demo</h3> <div class="demo-placeholder svelte-126eukc"><style>
-            
-            
-          </style> <p>
-  <button onclick="readTag()">Test NFC Read</button>
-  <button onclick="writeTag()">Test NFC Write</button>
+---
+feature_name: Web NFC
+chrome_version: 89
+feature_id: 6261030015467520
+check_min_version: true
+---
+
+<h3>Background</h3>
+<p>
+    Web NFC aims to provide sites the ability to read and write to NFC tags when
+    they are brought in close proximity to the user’s device (usually 5-10 cm, 2-4
+    inches). The current scope is limited to NDEF, a lightweight binary message
+    format. Low-level I/O operations (e.g. ISO-DEP, NFC-A/B, NFC-F) and Host-based
+    Card Emulation (HCE) are not supported within the current scope.
 </p>
-<pre id="log">Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-Web NFC is not supported.
-</pre>
-<p><small>Based on the code snippets from <a href="https://w3c.github.io/web-nfc/#examples">specification draft</a>.</small></p></div> <ul class="tabs svelte-126eukc"><li class="tab svelte-126eukc"><input class="svelte-126eukc" id="demo-code-js" name="tabs" type="radio" checked=""> <label class="svelte-126eukc" for="demo-code-js">JavaScript</label> <pre id="demo-code-content-js" class="demo-code-tab svelte-126eukc  language-javascript" tabindex="0"><code class="  language-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">readTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"NDEFReader"</span> <span class="token keyword">in</span> window<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> ndef <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NDEFReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">try</span> <span class="token punctuation">{</span>
-      <span class="token keyword">await</span> ndef<span class="token punctuation">.</span><span class="token function">scan</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      ndef<span class="token punctuation">.</span><span class="token function-variable function">onreading</span> <span class="token operator">=</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
-        <span class="token keyword">const</span> decoder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TextDecoder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> record <span class="token keyword">of</span> event<span class="token punctuation">.</span>message<span class="token punctuation">.</span>records<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token function">consoleLog</span><span class="token punctuation">(</span><span class="token string">"Record type:  "</span> <span class="token operator">+</span> record<span class="token punctuation">.</span>recordType<span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token function">consoleLog</span><span class="token punctuation">(</span><span class="token string">"MIME type:    "</span> <span class="token operator">+</span> record<span class="token punctuation">.</span>mediaType<span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token function">consoleLog</span><span class="token punctuation">(</span><span class="token string">"=== data ===\n"</span> <span class="token operator">+</span> decoder<span class="token punctuation">.</span><span class="token function">decode</span><span class="token punctuation">(</span>record<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token function">consoleLog</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token function">consoleLog</span><span class="token punctuation">(</span><span class="token string">"Web NFC is not supported."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
 
-<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">writeTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">"NDEFReader"</span> <span class="token keyword">in</span> window<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> ndef <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NDEFReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">try</span> <span class="token punctuation">{</span>
-      <span class="token keyword">await</span> ndef<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"What Web Can Do Today"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token function">consoleLog</span><span class="token punctuation">(</span><span class="token string">"NDEF message written!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token function">consoleLog</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token function">consoleLog</span><span class="token punctuation">(</span><span class="token string">"Web NFC is not supported."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<button id="scanButton">Scan</button>
+<button id="writeButton">Write</button>
+<button id="makeReadOnlyButton">Make Read-Only</button>
 
-<span class="token keyword">function</span> <span class="token function">consoleLog</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">var</span> logElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'log'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  logElement<span class="token punctuation">.</span>innerHTML <span class="token operator">+=</span> data <span class="token operator">+</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></li> <li class="tab svelte-126eukc"><input class="svelte-126eukc" id="demo-code-html" name="tabs" type="radio"> <label class="svelte-126eukc" for="demo-code-html">HTML</label> <pre id="demo-code-content-html" class="demo-code-tab svelte-126eukc  language-html" tabindex="0"><code class="  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">readTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Test NFC Read<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">writeTag</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Test NFC Write<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>log<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">&gt;</span></span>Based on the code snippets from <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://w3c.github.io/web-nfc/#examples<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>specification draft<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></code></pre></li> </ul></section> <section aria-hidden="true"><h3>Browser support</h3> <div class="caniuse-report"><div class="row svelte-126eukc"><div class="ct-chart browsers-chart col-sm-6 svelte-126eukc"><div class="chartist-tooltip" style="top: 120.75px; left: -84.5px;">Partial support in version 113<br>Market share: 56.54%</div><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar ct-horizontal-bars" style="width: 100%; height: 100%;"><text class="ct-axis-title" x="338.75" y="295" text-anchor="middle">Market share (Thailand, %)</text><g class="ct-grids"><line x1="50" x2="50" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="98.125" x2="98.125" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="146.25" x2="146.25" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="194.375" x2="194.375" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="242.5" x2="242.5" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="290.625" x2="290.625" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="338.75" x2="338.75" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="386.875" x2="386.875" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="435" x2="435" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="483.125" x2="483.125" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="531.25" x2="531.25" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="579.375" x2="579.375" y1="15" y2="265" class="ct-grid ct-horizontal"></line><line x1="627.5" x2="627.5" y1="15" y2="265" class="ct-grid ct-horizontal"></line></g><g><g class="ct-series ct-series-a"><line y1="240" y2="240" x1="50" x2="81.67731875000001" class="ct-bar" ct:value="3.2911500000000005" ct:meta="No support"></line><line y1="190" y2="190" x1="50" x2="77.61691625" class="ct-bar" ct:value="2.86929" ct:meta="No support in versions 4 - 20"></line><line y1="140" y2="140" x1="50" x2="50" class="ct-bar" ct:value="0" ct:meta="No support"></line><line y1="90" y2="90" x1="50" x2="322.857585" class="ct-bar" ct:value="28.34884" ct:meta="No support in versions 3.2 - 16.5"></line><line y1="40" y2="40" x1="50" x2="121.52376" class="ct-bar" ct:value="7.431039999999999" ct:meta="No support in versions 4 - 116"></line></g><g class="ct-series ct-series-b"><line y1="240" y2="240" x1="81.67731875000001" x2="81.74796625000002" class="ct-bar" ct:value="0.00734" ct:meta="Partial support"></line><line y1="190" y2="190" x1="77.61691625" x2="77.61691625" class="ct-bar" ct:value="0" ct:meta="Partial support"></line><line y1="140" y2="140" x1="50" x2="594.22550875" class="ct-bar" ct:value="56.54291" ct:meta="Partial support in version 113"></line><line y1="90" y2="90" x1="322.857585" x2="322.857585" class="ct-bar" ct:value="0" ct:meta="Partial support"></line><line y1="40" y2="40" x1="121.52376" x2="122.01781125" class="ct-bar" ct:value="0.05133" ct:meta="Partial support in versions 80 - 88"></line></g><g class="ct-series ct-series-c"><line y1="240" y2="240" x1="81.74796625000002" x2="81.74796625000002" class="ct-bar" ct:value="0" ct:meta="Supported"></line><line y1="190" y2="190" x1="77.61691625" x2="77.61691625" class="ct-bar" ct:value="0" ct:meta="Supported"></line><line y1="140" y2="140" x1="594.22550875" x2="594.22550875" class="ct-bar" ct:value="0" ct:meta="Supported"></line><line y1="90" y2="90" x1="322.857585" x2="322.857585" class="ct-bar" ct:value="0" ct:meta="Supported"></line><line y1="40" y2="40" x1="122.01781125" x2="122.01781125" class="ct-bar" ct:value="0" ct:meta="Supported"></line></g></g><g class="ct-labels"><foreignobject style="overflow: visible;" y="215" x="10" height="50" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 50px; width: 30px;">Others</span></foreignobject><foreignobject style="overflow: visible;" y="165" x="10" height="50" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 50px; width: 30px;">Samsung</span></foreignobject><foreignobject style="overflow: visible;" y="115" x="10" height="50" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 50px; width: 30px;">Chrome (Android)</span></foreignobject><foreignobject style="overflow: visible;" y="65" x="10" height="50" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 50px; width: 30px;">Safari (iOS)</span></foreignobject><foreignobject style="overflow: visible;" y="15" x="10" height="50" width="30"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 50px; width: 30px;">Chrome</span></foreignobject><foreignobject style="overflow: visible;" x="50" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">0</span></foreignobject><foreignobject style="overflow: visible;" x="98.125" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">5</span></foreignobject><foreignobject style="overflow: visible;" x="146.25" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">10</span></foreignobject><foreignobject style="overflow: visible;" x="194.375" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">15</span></foreignobject><foreignobject style="overflow: visible;" x="242.5" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">20</span></foreignobject><foreignobject style="overflow: visible;" x="290.625" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">25</span></foreignobject><foreignobject style="overflow: visible;" x="338.75" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">30</span></foreignobject><foreignobject style="overflow: visible;" x="386.875" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">35</span></foreignobject><foreignobject style="overflow: visible;" x="435" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">40</span></foreignobject><foreignobject style="overflow: visible;" x="483.125" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">45</span></foreignobject><foreignobject style="overflow: visible;" x="531.25" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">50</span></foreignobject><foreignobject style="overflow: visible;" x="579.375" y="270" width="48.125" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 48px; height: 20px;">55</span></foreignobject><foreignobject style="overflow: visible;" x="627.5" y="270" width="30" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 30px; height: 20px;">60</span></foreignobject></g></svg></div> <div class="ct-chart overall-chart col-sm-6 svelte-126eukc"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-pie" style="width: 100%; height: 100%;"><g class="ct-series ct-series-a"><path d="M386.584,279.447A145,145,0,0,0,321.25,5L321.25,150Z" class="ct-slice-pie" ct:value="41.94032"></path></g><g class="ct-series ct-series-b"><path d="M321.25,5A145,145,0,1,0,387.035,279.218L321.25,150Z" class="ct-slice-pie" ct:value="56.60158"></path></g><g></g><g><text dx="391.7790714551794" dy="133.2101197243639" text-anchor="middle" class="ct-label">No support - 41.94%</text><text dx="250.7209285448206" dy="166.78988027563614" text-anchor="middle" class="ct-label">Partial support - 56.60%</text></g></svg></div></div> <div class="row svelte-126eukc"><div class="legend svelte-126eukc"><ul class="svelte-126eukc"><li class="svelte-126eukc"><i class="cl-support cl-support-no"></i> No support</li> <li class="svelte-126eukc"><i class="cl-support cl-support-partial"></i> Partial support, <a href="http://caniuse.com/#feat=webnfc" rel="noopener" target="_blank">see details</a></li> <li class="svelte-126eukc"><i class="cl-support cl-support-full"></i> Full support</li></ul></div> <div class="text-right svelte-126eukc"><a href="http://caniuse.com/#feat=webnfc" rel="noopener" target="_blank">Data from caniuse.com</a>, <small>CC-BY 4.0 license</small></div></div></div></section> <section><h3>Resources</h3> <ul class="resources"><li><a href="https://w3c.github.io/web-nfc/" rel="noopener" target="_blank">Specification Draft</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/API/NFC_API/Using_the_NFC_API" rel="noopener" target="_blank">MDN: Using the NFC API (covers outdated spec revision)</a></li></ul></section></article></main> <div class="loader svelte-p0dnmz" aria-hidden="true"><div class="lds-ellipsis svelte-p0dnmz"><div class="svelte-p0dnmz"></div><div class="svelte-p0dnmz"></div><div class="svelte-p0dnmz"></div><div class="svelte-p0dnmz"></div></div></div> <div class="container svelte-btjd4g" aria-label="Website footer"><div class="contact text-center"><h2 class="svelte-btjd4g">Get in touch</h2> <ul class="svelte-btjd4g"><li class="svelte-btjd4g"><a href="mailto:hi@adambar.pl" class="icon mail-icon svelte-btjd4g">Mail</a></li> <li class="svelte-btjd4g"><a href="https://twitter.com/WhatWebCanDo" class="icon twitter-icon svelte-btjd4g" rel="noreferrer noopener" target="_blank">Twitter</a></li> <li class="svelte-btjd4g"><a href="https://linkedin.com/in/adamrbar" class="icon linkedin-icon svelte-btjd4g" rel="noreferrer noopener" target="_blank">LinkedIn</a></li> <li class="svelte-btjd4g"><a href="https://github.com/NOtherDev/whatwebcando" class="icon github-icon svelte-btjd4g" rel="noreferrer noopener" target="_blank">GitHub</a></li></ul></div> <footer class="svelte-btjd4g" role="contentinfo"><p class="text-left"><a href="https://whatwebcando.today/privacy.html" class="svelte-btjd4g">Privacy Policy</a></p> <p class="text-right">Created by <a href="https://adambar.pl/" class="svelte-btjd4g" rel="noopener" target="_blank">Adam Bar</a><br>
-      Licenced under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="svelte-btjd4g" rel="noreferrer noopener" target="_blank">CC-BY-SA 4.0</a></p></footer></div></div> <script>__SAPPER__={baseUrl:"",preloaded:[void 0,]};if('serviceWorker' in navigator) window.addEventListener('load',function(){navigator.serviceWorker.register('/service-worker.js');});(function(){try{eval("async function x(){}");var main="/client/client.000ded29.js"}catch(e){main="/client/legacy/client.84cd7258.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@1.0.1.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <script src="./index_files/js"></script><script id="oneOffScript" type="text/javascript">async function readTag() {
-  if ("NDEFReader" in window) {
-    const ndef = new NDEFReader();
-    try {
-      await ndef.scan();
-      ndef.onreading = event => {
-        const decoder = new TextDecoder();
-        for (const record of event.message.records) {
-          consoleLog("Record type:  " + record.recordType);
-          consoleLog("MIME type:    " + record.mediaType);
-          consoleLog("=== data ===\n" + decoder.decode(record.data));
-        }
-      }
-    } catch(error) {
-      consoleLog(error);
-    }
-  } else {
-    consoleLog("Web NFC is not supported.");
-  }
-}
+{% include output_helper.html initial_output_content=initial_output_content %}
 
-async function writeTag() {
-  if ("NDEFReader" in window) {
-    const ndef = new NDEFReader();
-    try {
-      await ndef.write("What Web Can Do Today");
-      consoleLog("NDEF message written!");
-    } catch(error) {
-      consoleLog(error);
-    }
-  } else {
-    consoleLog("Web NFC is not supported.");
-  }
-}
+<script>
+    // log = ChromeSamples.log;
 
-function consoleLog(data) {
-  var logElement = document.getElementById('log');
-  logElement.innerHTML += data + '\n';
-};</script></body></html>
+    document.getElementById('scanButton').innerHTML = 'NDEFReader' in window
+    // if (!("NDEFReader" in window))
+    //     ChromeSamples.setStatus("Web NFC is not available. Use Chrome on Android.");
+
+    // scanButton.addEventListener('click', async () => {
+    //     alert('ff')
+    //     alert('User clicked scan button')
+
+    //     try {
+    //         const ndef = new NDEFReader()
+    //         await ndef.scan()
+    //         alert('> Scan started')
+
+    //         ndef.addEventListener('readingerror', () => {
+    //             alert('Argh! Cannot read data from the NFC tag. Try another one?')
+    //         })
+
+    //         ndef.addEventListener('reading', ({ message, serialNumber }) => {
+    //             alert(`> Serial Number: ${serialNumber}`)
+    //             alert(`> Records: (${message.records.length})`)
+    //         })
+    //     } catch (error) {
+    //         alert('Argh! ' + error)
+    //     }
+    // })
+
+    // writeButton.addEventListener('click', async () => {
+    //     alert('User clicked write button')
+
+    //     try {
+    //         const ndef = new NDEFReader()
+    //         await ndef.write('Hello world!')
+    //         alert('> Message written')
+    //     } catch (error) {
+    //         alert('Argh! ' + error)
+    //     }
+    // })
+
+    // makeReadOnlyButton.addEventListener('click', async () => {
+    //     alert('User clicked make read-only button')
+
+    //     try {
+    //         const ndef = new NDEFReader()
+    //         await ndef.makeReadOnly()
+    //         alert('> NFC tag has been made permanently read-only')
+    //     } catch (error) {
+    //         alert('Argh! ' + error)
+    //     }
+    // })
+
+</script>
